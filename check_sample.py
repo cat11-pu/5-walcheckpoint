@@ -33,6 +33,7 @@ def main() -> int:
     print("恢复后总量不变 =", info.get("puts") == store.puts)
     print("不变量（seq 单调且无空洞） =", info.get("seq_ok"))
     print("检查点字节数 =", len(checkpoint))
+    print("写次数 =", fresh.puts + fresh.deletes)
     return 0
 
 
